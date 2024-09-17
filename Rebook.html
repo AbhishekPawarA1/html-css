@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #f8f8f8;
+    }
+    
+    .logo img {
+        height: 22px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+    
+    /* .header-icons a {
+        margin-left: 15px;
+        color: #000;
+    } */
+    
+    main {
+        padding: 20px;
+    }
+    
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    
+    .product-card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .product-card img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .product-info h4 {
+        margin: 10px 0;
+        font-size: 18px;
+        color: #333;
+    }
+    
+    .product-info p {
+        color: #666;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #f8f8f8;
+    }
+    .left {
+        text-align: left;
+        margin: -1px 0 7px 0;
+    }
+</style>
+    <title>Shoe Store</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="https://imagescdn.reebok.in/img/app/brands/superapp/Icons/header_brand_logo_RBK.png?q=75&auto=format" alt="Reebok Logo">
+        </div>
+        <nav style="margin-right:550px ;">
+            <ul>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Icons</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Classic</a></li>
+                <li ><a style="color: red;" href="#">Sale</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="#"><i class="fa fa-heart"></i></a>
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+    </header>
+
+    <!-- Product Grid -->
+    <main >
+        <section class="product-grid">
+            <div class="product-card">
+                <img src="https://imagescdn.reebok.in/img/app/product/3/39627953-12965466.jpg?auto=format&w=390" alt="Reebok Women NFX Trainer">
+                <div class="product-info">
+                    <p class="left">Training Shoes</p>
+                    <p class="left">Reebok Women NFX Trainer</p>
+                    <h4 class="left">₹ 7,599</h4>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://imagescdn.reebok.in/img/app/product/3/39627948-12965418.jpg?auto=format&w=390" alt="Reebok Women Club C 85 W">
+                <div class="product-info">
+                    <p class="left">Classics Shoes</p>
+                    <p class="left">Reebok Women Club C 85 W</p>
+                    <h4 class="left">₹ 6,999</h4>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://imagescdn.reebok.in/img/app/product/3/39627944-12965381.jpg?auto=format&w=390" alt="Reebok Women Energen Plus 2">
+                <div class="product-info">
+                    <p class="left">Running Shoes</p>
+                    <p class="left">Reebok Women Energen Plus 2</p>
+                    <h4 class="left">₹ 6,999</h4>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://imagescdn.reebok.in/img/app/product/3/39681169-13866734.jpg?auto=format&w=390" alt="Reebok Unisex Classic Leather">
+                <div class="product-info">
+                    <p class="left">Classics Shoes</p>
+                    <p class="left">Reebok Unisex Classic Leather</p>
+                    <h4 class="left">₹ 7,999</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Optional Footer Section -->
+    <footer>
+        <p>© 2024 Shoe Store. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
